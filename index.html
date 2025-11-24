@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Tuo Catering</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+    .hero { 
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat; 
+      color: white; 
+      height: 80vh; 
+      display: flex; 
+      align-items: center; 
+      text-align: center; 
+    }
+    .hero h1 { font-size: 3rem; font-weight: 700; }
+    .hero p { font-size: 1.5rem; margin-bottom: 2rem; }
+    footer { background: #333; color: white; padding: 20px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Il Tuo Catering</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi Siamo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex justify-content-center align-items-center">
+    <div class="container">
+      <h1>Catering per ogni occasione</h1>
+      <p>Delizie su misura per eventi indimenticabili</p>
+      <a href="#contatti" class="btn btn-warning btn-lg">Contattaci</a>
+    </div>
+  </section>
+
+  <!-- Servizi -->
+  <section id="servizi" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">I nostri servizi</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Matrimoni">
+            <div class="card-body">
+              <h5 class="card-title">Matrimoni</h5>
+              <p class="card-text">Menu personalizzati per il tuo giorno speciale.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Eventi Aziendali">
+            <div class="card-body">
+              <h5 class="card-title">Eventi Aziendali</h5>
+              <p class="card-text">Catering professionale per meeting e feste aziendali.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Feste Private">
+            <div class="card-body">
+              <h5 class="card-title">Feste Private</h5>
+              <p class="card-text">Dal compleanno alla cena elegante, ci pensiamo noi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chi Siamo -->
+  <section id="chi-siamo" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Chi Siamo</h2>
+      <p>Siamo un team di professionisti appassionati di cucina e di eventi, dedicati a rendere ogni momento unico e gustoso.</p>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contattaci</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Nome" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Messaggio" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Invia</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Il Tuo Catering. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
