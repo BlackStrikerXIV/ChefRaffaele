@@ -3,24 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Tuo Catering</title>
-  <!-- Bootstrap CSS -->
+  <title>Raffaele Picariello</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <style>
-    body { font-family: 'Roboto', sans-serif; }
+    body { 
+      font-family: 'Roboto', sans-serif; 
+    }
+
+    /* Font elegante per titoli, navbar, slogan */
+    h1, h2, h3, h4, h5, .navbar-brand, .hero p {
+      font-family: 'Playfair Display', serif !important;
+    }
+
     .hero { 
-      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat; 
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('img/raffa_back.jpg') center/cover no-repeat; 
       color: white; 
-      height: 80vh; 
+      height: 40vh; 
       display: flex; 
       align-items: center; 
+      justify-content: center;
       text-align: center; 
     }
-    .hero h1 { font-size: 3rem; font-weight: 700; }
-    .hero p { font-size: 1.5rem; margin-bottom: 2rem; }
+
+    .hero h1, .hero p { 
+      position: relative; 
+      z-index: 2; 
+    }
+
     footer { background: #333; color: white; padding: 20px 0; }
+    .card-img-top { height: 300px; object-fit: cover; }
+    .card { height: 100%; }
   </style>
 </head>
 <body>
@@ -28,15 +51,20 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Il Tuo Catering</a>
+      <a class="navbar-brand fw-bold" href="#">Raffaele Picariello</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi Siamo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servizi">Scopri le Proposte</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi Sono</a></li>
           <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/raffaelepicariellochef/?utm_source=ig_web_button_share_sheet" target="_blank">
+              <i class="bi bi-instagram" style="font-size: 1.2rem;"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -45,41 +73,53 @@
   <!-- Hero Section -->
   <section class="hero d-flex justify-content-center align-items-center">
     <div class="container">
-      <h1>Catering per ogni occasione</h1>
-      <p>Delizie su misura per eventi indimenticabili</p>
-      <a href="#contatti" class="btn btn-warning btn-lg">Contattaci</a>
+      <h1>Mi occupo di tutto, tu goditi l'esperienza!</h1>
+      <p>Scopri il menù su misura per te</p>
     </div>
   </section>
 
   <!-- Servizi -->
   <section id="servizi" class="py-5">
     <div class="container text-center">
-      <h2 class="mb-4">I nostri servizi</h2>
+      <h2 class="mb-4">Scopri le Proposte</h2>
       <div class="row g-4">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card h-100 shadow-sm">
-            <img src="https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Matrimoni">
+            <img src="img/matrimonio.jpg" class="card-img-top" alt="Lusso">
             <div class="card-body">
-              <h5 class="card-title">Matrimoni</h5>
-              <p class="card-text">Menu personalizzati per il tuo giorno speciale.</p>
+              <h5 class="card-title">Lusso</h5>
+              <p class="card-text">Menu degustazione di 8 portate</p>
+              <a href="lusso.html" class="btn btn-warning">Scopri il menu</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card h-100 shadow-sm">
-            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Eventi Aziendali">
+            <img src="img/catering.jpg" class="card-img-top" alt="Catering & Eventi">
             <div class="card-body">
-              <h5 class="card-title">Eventi Aziendali</h5>
-              <p class="card-text">Catering professionale per meeting e feste aziendali.</p>
+              <h5 class="card-title">Menu 2</h5>
+              <p class="card-text"></p>
+              <a href="catering-eventi.html" class="btn btn-warning">Scopri il menu</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card h-100 shadow-sm">
-            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Feste Private">
+            <img src="img/amatriciana.jpg" class="card-img-top" alt="Cucina a domicilio">
             <div class="card-body">
-              <h5 class="card-title">Feste Private</h5>
-              <p class="card-text">Dal compleanno alla cena elegante, ci pensiamo noi.</p>
+              <h5 class="card-title">Menu 3</h5>
+              <p class="card-text"></p>
+              <a href="cucina.html" class="btn btn-warning">Scopri il menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/dolce.jpg" class="card-img-top" alt="Corsi di Cucina">
+            <div class="card-body">
+              <h5 class="card-title">Menu 4</h5>
+              <p class="card-text"></p>
+              <a href="corsi.html" class="btn btn-warning">Scopri il menu</a>
             </div>
           </div>
         </div>
@@ -88,44 +128,58 @@
   </section>
 
   <!-- Chi Siamo -->
-  <section id="chi-siamo" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-4">Chi Siamo</h2>
-      <p>Siamo un team di professionisti appassionati di cucina e di eventi, dedicati a rendere ogni momento unico e gustoso.</p>
+  <section id="chi-siamo" class="py-1 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Chi Sono</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="img/raffa.jpg" 
+              class="img-fluid rounded shadow" alt="Team in cucina">
+        </div>
+        <div class="col-md-6">
+          <h5>La mia formazione</h5>
+          <p>Ho avuto il privilegio di iniziare la mia formazione in catering di eccellenza, hotel di lusso e ristoranti gourmet affinando tecnica, sensibilità e visione. Da diversi anni sono Executive Chef ed ho scelto di portare le mie competenze anche nelle case dei miei ospiti, ai quali ho piacere di proporre una vera e propria esperienza, curata nei minimi dettagli.</p>
+
+          <h5>La mia filosofia</h5>
+          <p>La buona cucina è l’arte di unire ingredienti, tecnica e presentazione al fine di stimolare emozioni e, perché no, anche ricordi.
+              Una cena è per me anche un breve viaggio sensoriale che merita rispetto ed autenticità, a partire da quella delle materie prime, rigorosamente freschissime, stagionali e di prima qualità.
+              Il mio obiettivo è raccontare in ogni piatto una breve storia di creatività, gusto ed equilibrio.</p>
+
+          <h5>L’esperienza a casa tua</h5>
+          <p>Desidero entrare nella vostra cucina occupandomi di tutto, dalla spesa alla preparazione fino anche al servizio, lasciando gli spazi che mi dedicate in perfetto ordine.
+            Un'occasione informale o elegante verrà studiata insieme nel dettaglio per rendere “una cena”, “la vostra cena” in cui potrete godere unicamente del piacere della convivialità e della soddisfazione dei vostri commensali nel relax del calore di casa.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contatti -->
-  <section id="contatti" class="py-5">
+  <section id="contatti" class="py-5 text-center">
     <div class="container">
-      <h2 class="text-center mb-4">Contattaci</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Nome" required>
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" rows="5" placeholder="Messaggio" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-warning w-100">Invia</button>
-          </form>
-        </div>
-      </div>
+      <h2 class="mb-4">Contatti</h2>
+        <p>
+          <i class="bi bi-envelope-fill me-2"></i>
+          <a href="mailto:Picarielloraffaele93@gmail.com" class="text-decoration-none text-dark">
+            Picarielloraffaele93@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <i class="bi bi-telephone-fill me-2"></i>
+          <a href="tel:+393663491506" class="text-decoration-none text-dark">
+            +39 366-3491506
+          </a>
+        </p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="text-center">
     <div class="container">
-      <p>&copy; 2025 Il Tuo Catering. Tutti i diritti riservati.</p>
+      <p>&copy; 2025 BlackStrikerXI. Tutti i diritti riservati.</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
