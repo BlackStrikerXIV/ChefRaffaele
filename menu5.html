@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaggio nel gusto per due – Raffaele Picariello</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts: Roboto + Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+
+    /* Font elegante per titoli e navbar */
+    h1, h2, h3, h4, h5, .navbar-brand, .hero p {
+      font-family: 'Playfair Display', serif !important;
+    }
+
+    .hero {
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('img/raffa_back.jpg') center/cover no-repeat;
+      color: white;
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 2;
+    }
+    .luxury-price {
+  background: linear-gradient(135deg, #f7f3e9, #fff);
+  border: 1px solid #d4af37; /* Oro */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.luxury-price h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #d4af37; /* Oro */
+  margin: 0;
+}
+
+.luxury-price p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin: 5px 0 0;
+}
+
+    footer { background: #333; color: white; padding: 20px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Raffaele Picariello</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/raffaelepicariellochef/?utm_source=ig_web_button_share_sheet" target="_blank">
+              <i class="bi bi-instagram" style="font-size: 1.2rem;"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero d-flex justify-content-center align-items-center">
+    <div>
+      <h1>Viaggio nel gusto per due</h1>
+<!-- <p>Menu degustazione di 8 portate</p> -->
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Il Menu</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Entree di benvenuto</h4>
+          <ul>
+            <li>Tamago sando con branzino al limone e shiso</li>
+          </ul>
+
+          <h4>Pani e lievitati</h4>
+          <ul>
+            <li>Grissino all'amatriciana</li>
+            <li>Focaccella di patate e rosmarino</li>
+          </ul>
+
+          <h4>Antipasto</h4>
+          <ul>
+            <li>Carpaccio di gambero rosso con pomodorino giallo confit,mayo al sedano e polvere di basilico</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Primo</h4>
+          <ul>
+            <li>Risotto con polpo alla luciana pomodoro datterino Arrosto crumble di olive nere e estratto di olio al prezzemolo</li>
+          </ul>
+
+          <h4>Secondo</h4>
+          <ul>
+            <li>Dentice alla mugniaia con beurre blanc e terrina di patate al timo</li>
+          </ul>
+
+          <h4>Dolce</h4>
+          <ul>
+            <li>Mousse di cioccolato bianco, cocco ,caramello al rum bianco e ananas - oppure - Millefoglie con crema di mascarpone,gel di caffè crumble di cioccolato al sale maldon e cacao</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+<div class="luxury-price">
+  <h3>Prezzo del Menu</h3>
+  <p>125€ a persona iva esclusa</p>
+  <p>(minimo 4 ospiti)</p>
+</div>
+
+    <div class="container">
+      <p class="text-center mb-4">
+        "Se hai allergie,intolleranze o gusti alternativi non preoccuparti scrivimi e troveremo una valida alternativa mantenendo la cromaticita e il sapore 
+            dei piatti proprio come gli altri commensali o se vuoi possiamo direttamente cambiare le portate e personalizzarle a tuo piacimento"
+      </p> 
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 BlackStrikerXI. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
