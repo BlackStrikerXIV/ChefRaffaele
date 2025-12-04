@@ -1,0 +1,113 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #f8f8f8;
+    padding: 20px 0;
+}
+
+header .logo {
+    float: left;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Hero */
+.hero {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    text-decoration: none;
+    background: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+/* Servizi */
+.servizi {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.servizi .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: #f8f8f8;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 250px;
+    border-radius: 8px;
+}
+
+/* Chi Siamo */
+.chi-siamo {
+    padding: 80px 0;
+    background: #fff5e6;
+    text-align: center;
+}
+
+/* Contatti */
+.contatti {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contatti form {
+    m

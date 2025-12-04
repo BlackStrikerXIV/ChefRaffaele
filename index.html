@@ -61,8 +61,21 @@
           <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi Sono</a></li>
           <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
           <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#giftcardModal">Gift Card</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="https://www.instagram.com/raffaelepicariellochef/?utm_source=ig_web_button_share_sheet" target="_blank">
               <i class="bi bi-instagram" style="font-size: 1.2rem;"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/share/1FwjNq9avF/" target="_blank">
+              <i class="bi bi-facebook" style="font-size: 1.2rem;"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://youtube.com/@raffaelepicariellochef?si=hlMtRYf9oLV51iGO" target="_blank">
+              <i class="bi bi-youtube" style="font-size: 1.2rem;"></i>
             </a>
           </li>
         </ul>
@@ -85,7 +98,7 @@
       <div class="row g-4">
         <div class="col-md-3">
           <div class="card h-100 shadow-sm">
-            <img src="img/matrimonio.jpg" class="card-img-top" alt="Origini in evoluzione">
+            <img src="img/menu_origini.jpg" class="card-img-top" alt="Origini in evoluzione">
             <div class="card-body">
               <h5 class="card-title">Origini in evoluzione</h5>
 <!--<p class="card-text">Menu degustazione di 8 portate</p>-->
@@ -95,7 +108,7 @@
         </div>
         <div class="col-md-3">
           <div class="card h-100 shadow-sm">
-            <img src="img/catering.jpg" class="card-img-top" alt="Radici e foglie">
+            <img src="img/radici_e_foglie.jpg" class="card-img-top" alt="Radici e foglie">
             <div class="card-body">
               <h5 class="card-title">Radici e foglie</h5>
               <p class="card-text"></p>
@@ -105,7 +118,7 @@
         </div>
         <div class="col-md-3">
           <div class="card h-100 shadow-sm">
-            <img src="img/amatriciana.jpg" class="card-img-top" alt="Menu degustazione di pesce">
+            <img src="img/menu_pasce.PNG" class="card-img-top" alt="Menu degustazione di pesce">
             <div class="card-body">
               <h5 class="card-title">Menu degustazione di pesce</h5>
               <p class="card-text"></p>
@@ -115,7 +128,7 @@
         </div>
         <div class="col-md-3">
           <div class="card h-100 shadow-sm">
-            <img src="img/dolce.jpg" class="card-img-top" alt="Essenza romana">
+            <img src="img/amatriciana.jpg" class="card-img-top" alt="Essenza romana">
             <div class="card-body">
               <h5 class="card-title">Essenza romana</h5>
               <p class="card-text"></p>
@@ -163,6 +176,20 @@
     </div>
   </section>
 
+<!-- Citazione -->
+<section class="py-5 text-center" style="background-color: #f8f9fa;">
+  <div class="container">
+    <blockquote class="blockquote">
+      <p class="mb-4 fst-italic" style="font-size: 1.25rem;">
+        La semplicità, espressa dal prodotto di assoluta qualità, reddigiosa ma associata a raffinata nella presentazione, ne valorizza i suoi sapori mettendone in mostra le doti, mostrando così l'accentuata passione dell'esecutore.
+      </p>
+      <footer class="blockquote-footer mt-3" style="font-family: 'Playfair Display', serif;">
+        Raffaele Picariello, <cite title="Chef de Cuisine">Chef de Cuisine</cite>
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
   <!-- Contatti -->
   <section id="contatti" class="py-5 text-center">
     <div class="container">
@@ -181,14 +208,30 @@
           </a>
         </p>
 
-        <p>
-          <i class="bi bi-instagram me-2"></i>
-          <a href="https://www.instagram.com/raffaelepicariellochef/?utm_source=ig_web_button_share_sheet"
-            target="_blank"
-            class="text-decoration-none text-dark">
-            @raffaelepicariellochef
-          </a>
-        </p>
+<p>
+  <i class="bi bi-instagram me-2"></i>
+  <a href="https://www.instagram.com/raffaelepicariellochef/?utm_source=ig_web_button_share_sheet"
+    target="_blank"
+    class="text-decoration-none text-dark">
+    @raffaelepicariellochef
+  </a>
+</p>
+<p>
+  <i class="bi bi-facebook me-2"></i>
+  <a href="https://www.facebook.com/share/1FwjNq9avF/" 
+     target="_blank"
+     class="text-decoration-none text-dark">
+    Facebook
+  </a>
+</p>
+<p>
+  <i class="bi bi-youtube me-2"></i>
+  <a href="https://youtube.com/@raffaelepicariellochef?si=hlMtRYf9oLV51iGO" 
+     target="_blank"
+     class="text-decoration-none text-dark">
+    YouTube
+  </a>
+</p>
     </div>
   </section>
 
@@ -200,5 +243,39 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Gift Card Modal -->
+<div class="modal fade" id="giftcardModal" tabindex="-1" aria-labelledby="giftcardModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="giftcardModalLabel">Gift Card</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Scegli la tua gift card:</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <span class="badge bg-secondary fs-5 p-3">125€</span>
+          <span class="badge bg-secondary fs-5 p-3">250€</span>
+          <span class="badge bg-secondary fs-5 p-3">350€</span>
+          <span class="badge bg-secondary fs-5 p-3">500€</span>
+        </div>
+        <p class="mt-3">Per acquistare, contattaci direttamente:</p>
+        <p>
+          <i class="bi bi-envelope-fill me-2"></i>
+          <a href="mailto:Picarielloraffaele93@gmail.com" class="text-decoration-none text-dark">Picarielloraffaele93@gmail.com</a>
+        </p>
+        <p>
+          <i class="bi bi-telephone-fill me-2"></i>
+          <a href="tel:+393663491506" class="text-decoration-none text-dark">+39 366-3491506</a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
